@@ -120,11 +120,11 @@ class BaseProjectFactory: ProjectFactory {
 
 extension BaseProjectFactory {
 	var releaseAppInfo: AppInfomation {
-		AppInfomation(name: "Tooda", bundleId: "com.dts.tooda", configuration: .Release)
+		AppInfomation(name: "Tooda", bundleId: "com.tooda", configuration: .Release)
 	}
 	
 	var testAppinfo: AppInfomation {
-		AppInfomation(name: "ToodaTest", bundleId: "com.dts.tooda.test", configuration: .Debug)
+		AppInfomation(name: "ToodaTest", bundleId: "com.tooda.test", configuration: .Debug)
 	}
 }
 
@@ -141,7 +141,7 @@ extension BaseProjectFactory {
 	func aa() -> Configuration {
 		let configuration: [String: SettingValue] = [
 			"APP_NAME": "TodaTest",
-			"APP_IDENTIFIER": "com.dts.toda.test",
+			"APP_IDENTIFIER": "com.tooda.test",
 			"APP_VERSION": "2.0.1",
 			"APP_BUILD": "1",
 			"MY_VALUE": "Hello"
